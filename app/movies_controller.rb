@@ -56,7 +56,7 @@ def can_find_by_multiple_attributes #
   # release_date == 2000
   # director == "Me"
   #Movie.find_by(title: "Title")
-  Movie.find_by(title: "Title", release_date: 2000, director: "Me") 
+  Movie.find_by(title: "Title", release_date: 2000, director: "Me")
 end
 
 def can_find_using_where_clause_and_be_sorted #
@@ -81,9 +81,9 @@ end
 
 def can_update_multiple_items_at_once # ????
   # Change title of all movies to "A Movie"
-  5.times do |i|
-    Movie.create(title: "Movie_#{i}", release_date: 2000+i)
-  end
+  # 5.times do |i|
+  #   Movie.create(title: "Movie_#{i}", release_date: 2000+i)
+  # end
   Movie.update_all(title: "A Movie")
 end
 
